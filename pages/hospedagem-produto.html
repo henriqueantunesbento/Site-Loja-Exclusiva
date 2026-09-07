@@ -25,12 +25,129 @@
     </header>
 
     <main>
-        <!-- Banner / Boas-vindas -->
+        <!-- Seção de Apresentação -->
         <section>
-<p><b>Pagina de Hospedagem</b></p>
-    
+            <h2>Hospede e Venda Suas Peças</h2>
+            <p>Quer dar uma nova vida às peças do seu guarda-roupa? Cadastre suas roupas seminovas ou nunca usadas para serem anunciadas na <b>Loja Exclusiva</b>.</p>
+            
+            <h3>Como Funciona?</h3>
+            <ol>
+                <li>Preencha o formulário abaixo com os detalhes e fotos da peça.</li>
+                <li>Nossa equipe avaliará as condições do item em até 48 horas.</li>
+                <li>Após a aprovação, seu produto ficará disponível em nosso catálogo!</li>
+            </ol>
         </section>
-
+    
+        <hr>
+    
+        <!-- Seção do Formulário de Hospedagem -->
+        <section>
+            <h2>Formulário de Anúncio de Peça</h2>
+    
+            <form action="#" method="post">
+                
+                <!-- Dados da Vendedora -->
+                <fieldset>
+                    <legend><b>1. Dados da Vendedora</b></legend>
+                    <p>
+                        <label for="nome-vendedora">Nome Completo:</label><br>
+                        <input type="text" id="nome-vendedora" name="nome_vendedora" required placeholder="Digite seu nome">
+                    </p>
+                    <p>
+                        <label for="email-vendedora">E-mail de Contato:</label><br>
+                        <input type="email" id="email-vendedora" name="email_vendedora" required placeholder="seuemail@exemplo.com">
+                    </p>
+                    <p>
+                        <label for="telefone-vendedora">Telefone / WhatsApp:</label><br>
+                        <input type="tel" id="telefone-vendedora" name="telefone_vendedora" required placeholder="(11) 99999-9999">
+                    </p>
+                </fieldset>
+    
+                <br>
+    
+                <!-- Informações do Produto -->
+                <fieldset>
+                    <legend><b>2. Detalhes da Roupa</b></legend>
+                    
+                    <p>
+                        <label for="titulo-produto">Título do Anúncio:</label><br>
+                        <input type="text" id="titulo-produto" name="titulo_produto" required placeholder="Ex: Vestido Floral de Verão">
+                    </p>
+    
+                    <p>
+                        <label for="categoria">Categoria:</label><br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">-- Selecione uma categoria --</option>
+                            <option value="vestidos">Vestidos</option>
+                            <option value="blusas">Blusas e Tops</option>
+                            <option value="calcas">Calças e Jeans</option>
+                            <option value="saias">Saias</option>
+                            <option value="casacos">Casacos e Jaquetas</option>
+                            <option value="calcados">Calçados</option>
+                            <option value="acessorios">Acessórios</option>
+                        </select>
+                    </p>
+    
+                    <p>
+                        <label for="tamanho">Tamanho da Peça:</label><br>
+                        <select id="tamanho" name="tamanho" required>
+                            <option value="">-- Selecione o tamanho --</option>
+                            <option value="PP">PP</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                            <option value="unico">Tamanho Único</option>
+                        </select>
+                    </p>
+    
+                    <p>
+                        <label for="estado-peca">Estado de Conservação:</label><br>
+                        <select id="estado-peca" name="estado_peca" required>
+                            <option value="">-- Selecione o estado --</option>
+                            <option value="novo">Novo (Com etiqueta)</option>
+                            <option value="seminovo-perfeito">Seminovo (Estado de novo)</option>
+                            <option value="usado-bom">Usado (Em bom estado)</option>
+                        </select>
+                    </p>
+    
+                    <p>
+                        <label for="preco">Preço Desejado (R$):</label><br>
+                        <input type="number" id="preco" name="preco" step="0.01" min="0" placeholder="00,00" required>
+                    </p>
+    
+                    <p>
+                        <label for="descricao">Descrição Detalhada da Peça:</label><br>
+                        <textarea id="descricao" name="descricao" rows="5" cols="40" placeholder="Informe marca, tecido, detalhes especiais, avarias (se houver), etc."></textarea>
+                    </p>
+                </fieldset>
+    
+                <br>
+    
+                <!-- Envio de Fotos e Termos -->
+                <fieldset>
+                    <legend><b>3. Imagens e Aceite</b></legend>
+    
+                    <p>
+                        <label for="fotos">Fotos da Peça (Envie imagens claras da frente, costas e etiqueta):</label><br>
+                        <input type="file" id="fotos" name="fotos" multiple accept="image/*" required>
+                    </p>
+    
+                    <p>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Declaro que as informações prestadas são verdadeiras e que concordo com as <a href="politicas.html">Políticas de Hospedagem e Venda</a> do site.</label>
+                    </p>
+                </fieldset>
+    
+                <br>
+    
+                <p>
+                    <button type="submit">Enviar Peça para Análise</button>
+                    <button type="reset">Limpar Formulário</button>
+                </p>
+    
+            </form>
+        </section>
     </main>
 
     <!-- Rodapé da página -->
