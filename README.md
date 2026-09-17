@@ -1,5 +1,11 @@
 ## **Nomes dos alunos do grupo.**
 
+Henrique Antunes Bento
+Gustavo de Souza Barbosa
+Vinicius Ramiro dos Santos Cunha
+Paulo Alexandre Ferreira Martins
+Sofia de Oliveira Tavares
+
 ## **Link do site**
 
 https://henriqueantunesbento.github.io/Site-Loja-Exclusiva/
