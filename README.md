@@ -2,6 +2,8 @@
 
 ## **Link do site**
 
+https://henriqueantunesbento.github.io/Site-Loja-Exclusiva/
+
 ## **Introdução:** 
 
 Este é um trabalho de desenvolvimento de um site para a web com 10 páginas HTML destinado a matéria de front-end para a web, o grupo escolheu como organização
