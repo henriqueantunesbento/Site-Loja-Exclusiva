@@ -6,6 +6,14 @@ Vinicius Ramiro dos Santos Cunha
 Paulo Alexandre Ferreira Martins  
 Sofia de Oliveira Tavares 
 
+## **Contato da loja**
+
+Instagram: @exclusivaa_lojja
+
+Telefone / WhatsApp: (11) 95835-0265
+
+Endereço: Rua Bispo e Martins, nº 3 - Jd. Keralux
+
 ## **Link do site**
 
 https://henriqueantunesbento.github.io/Site-Loja-Exclusiva/
