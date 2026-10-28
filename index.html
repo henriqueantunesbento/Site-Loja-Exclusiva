@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="styles/styles.css">
 
 </head>
-<body class="body">
+<body>
 
     <header>
-        <h1 class="titulo-h1">Exclusiva</h1>
+        <nav class="menu-nav" aria-label="Menu principal">
+            <a href="index.html" aria-current="page">
+                <img src="assets/images/logo-png.png" width="800" height="383" alt="Exclusiva by Micaela Miranda – página inicial">
+            </a>
 
-        <nav class="menu-nav">
-            <a href="index.html"> <img src="assets/images/logo-png.png" width="200" alt="link pagina inicial Loja Exclusiva"></a> |
-            <a href="pages/lista-produtos.html">Catálogo</a> |
-            <a href="pages/novidades.html">Novidades</a> |
-            <a href="pages/hospedagem-produto.html">Hospedagem de Produto</a> |
-            <a href="pages/sobre-nos.html">Sobre Nós</a> |
-            <a href="pages/avaliacao.html">Avaliação</a> |
-            <a href="pages/trabalhe-conosco.html">Trabalhe Conosco</a>
-            <a href="pages/contato.html">Contato</a>
+            <ul class="menu-lista">
+                <li><a href="pages/lista-produtos.html">Catálogo</a></li>
+                <li><a href="pages/novidades.html">Novidades</a></li>
+                <li><a href="pages/hospedagem-produto.html">Hospedagem de Produto</a></li>
+                <li><a href="pages/sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="pages/avaliacao.html">Avaliação</a></li>
+                <li><a href="pages/trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                <li><a href="pages/contato.html">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -34,10 +37,10 @@
         <!-- Seção de Produtos Recém-Adicionados -->
         <section>
             <h2 class="titulo-h2">Recém-Adicionados</h2>
-            
+
             <article>
                 <h3 class="titulo-h3">Shorts sal e pimenta Original</h3>
-                <img src="assets/images/vestuario-e-acessorios/shorts/shorts-sal-e-pimenta-cinza.jpeg" alt="Shorts sal e pimenta" width="200">
+                <img src="assets/images/vestuario-e-acessorios/shorts/shorts-sal-e-pimenta-cinza.jpeg" alt="Shorts sal e pimenta cinza" width="200">
                 <p class="texto-p">Preço: xx,xx</p>
                 <a href="pages/Shortscinza.html">Ver detalhes do produto</a>
             </article>
@@ -46,9 +49,9 @@
 
             <article>
                 <h3 class="titulo-h3">Tênis Lançamento sal e Pimenta original</h3>
-                <img src="assets/images/vestuario-e-acessorios/calcados/tenis-sal-e-pimenta-bege.jpeg" alt="Tenis sal e pimenta" width="200">
-                <p class="texto-p">Preço: xx,xx </p>
-                <a href="pages/Tenisbege.html">Ver detalhes do produto</a>
+                <img src="assets/images/vestuario-e-acessorios/calcados/tenis-azul.jpeg" alt="Tênis sal e pimenta azul" width="200">
+                <p class="texto-p">Preço: xx,xx</p>
+                <a href="pages/Tenisazul.html">Ver detalhes do produto</a>
             </article>
 
             <br>
@@ -57,14 +60,15 @@
 
     </main>
 
-    <!-- Rodapé da página -->
-    <footer class="footer">
-        <hr>
+    <footer>
         <p>&copy; 2026 Loja Exclusiva - Todos os direitos reservados.</p>
-        <p>
-            <a href="pages/politicas.html">Políticas de Privacidade</a> | 
-            <a href="pages/contato.html">Atendimento</a>
-        </p>
+
+        <nav aria-label="Links do rodapé">
+            <ul class="footer-lista">
+                <li><a href="pages/politicas.html">Políticas de Privacidade</a></li>
+                <li><a href="pages/contato.html">Atendimento</a></li>
+            </ul>
+        </nav>
     </footer>
 
 </body>

@@ -1,73 +1,145 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;700&display=swap');
 
+/* ==========================================================
+   VARIÁVEIS
+   ========================================================== */
 :root {
-    --cor-principal: #0b0b0b; 
+    --cor-principal: #0b0b0b;
     --cor-secundaria: #c9a227;
-    --cor-links: #ffff;
+    --cor-links: #ffffff;
     --cor-texto: #f5f5f5;
-
+    --cor-pagina-atual: #c9a227; /* cor do link da página em que o usuário está */
+    --largura-max: 75rem;        /* largura do conteúdo: menu, página e footer usam a mesma */
 }
 
-.body {
+/* ==========================================================
+   ESTRUTURA GERAL (vale para todas as páginas, sem precisar de classe)
+   ========================================================== */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;              /* coluna: header, main, footer */
+    flex-direction: column;
     background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
 }
 
+/* Mesma largura e mesmo alinhamento: as linhas do menu e do footer ficam alinhadas */
+header,
+main,
+footer {
+    width: calc(100% - 2rem);
+    max-width: var(--largura-max);
+    margin: 0 auto;
+}
+
+/* O main ocupa o espaço que sobrar e empurra o footer para o fim da tela */
+main {
+    flex: 1;
+}
+
+/* ==========================================================
+   TÍTULOS E TEXTOS
+   ========================================================== */
 .titulo-h1 {
     color: var(--cor-secundaria);
     font-size: 3.5rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .titulo-h2 {
     color: var(--cor-secundaria);
     font-size: 1.75rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .titulo-h3 {
     font-size: 1.25rem;
     color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .texto-p {
     font-size: 1rem;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     color: var(--cor-texto);
 }
 
+/* ==========================================================
+   MENU DE NAVEGAÇÃO (header)
+   ========================================================== */
 .menu-nav {
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 15px;
-    padding: 10px;
-    color: var(--cor-secundaria);
-    border-bottom: solid 1px #c9a227;
-    
-}
-
-.menu-nav a {
-    color: var(--cor-links);
-}
-
-.menu-nav a :hover{
-    color: var(--cor-secundaria);
-}
-
-.footer {
-    display: inline-flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem 1.5rem;
+    padding: 0.5rem 0 0.75rem;
+    border-bottom: 2px solid var(--cor-secundaria);
+}
+
+.menu-nav img {
+    display: block;
+    width: 12rem;
+    height: auto;
+}
+
+/* Listas do menu e do footer: sem bolinhas, em linha e centralizadas */
+.menu-lista,
+.footer-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Separador entre os itens (feito no CSS, não no HTML) */
+.menu-lista li + li,
+.footer-lista li + li {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--cor-secundaria);
+}
+
+.menu-lista a,
+.footer-lista a {
+    display: inline-block;
+    padding: 0.5rem 0;          /* aumenta a área de clique */
+    color: var(--cor-links);
+}
+
+.menu-lista a:hover,
+.footer-lista a:hover {
     color: var(--cor-secundaria);
 }
 
-.footer p {
-    color: var(--cor-texto);
-    font-size: 1rem;
-    font-family: 'Open Sans';
+/* Link da página atual (o HTML marca com aria-current="page") */
+.menu-lista a[aria-current="page"] {
+    color: var(--cor-pagina-atual);
+    font-weight: 700;
 }
 
-.footer a {
-    color: var(--cor-links);
+/* Foco do teclado visível em todos os links do header e do footer */
+header a:focus-visible,
+footer a:focus-visible {
+    outline: 2px solid var(--cor-secundaria);
+    outline-offset: 2px;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1rem 0 1.5rem;
+    border-top: 1px solid var(--cor-secundaria);   
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 0.5rem;
+    color: var(--cor-texto);
     font-size: 1rem;
 }
