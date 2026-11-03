@@ -5,28 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial - Loja Exclusiva</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/styles.css">
 
 </head>
 <body>
 
-    <header>
-        <nav class="menu-nav" aria-label="Menu principal">
-            <a href="index.html" aria-current="page">
-                <img src="assets/images/logo-png.png" width="800" height="383" alt="Exclusiva by Micaela Miranda – página inicial">
+<header>
+    <nav class="navbar navbar-expand-lg menu-nav" aria-label="Menu principal">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" aria-current="page">
+                <img src="assets/images/logo-png.png" width="800" height="383" alt="Exclusiva by Micaela Miranda">
             </a>
 
-            <ul class="menu-lista">
-                <li><a href="pages/lista-produtos.html">Catálogo</a></li>
-                <li><a href="pages/novidades.html">Novidades</a></li>
-                <li><a href="pages/hospedagem-produto.html">Hospedagem de Produto</a></li>
-                <li><a href="pages/sobre-nos.html">Sobre Nós</a></li>
-                <li><a href="pages/avaliacao.html">Avaliação</a></li>
-                <li><a href="pages/trabalhe-conosco.html">Trabalhe Conosco</a></li>
-                <li><a href="pages/contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                    aria-expanded="false" aria-label="Abrir menu de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+  
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav menu-lista ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="pages/lista-produtos.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/novidades.html">Novidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/hospedagem-produto.html">Hospedagem de Produto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/sobre-nos.html">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/avaliacao.html">Avaliação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
     <main>
         <!-- Banner / Boas-vindas -->
@@ -36,13 +50,20 @@
 
         <!-- Seção de Produtos Recém-Adicionados -->
         <section>
+
+            <h2 class="titulo-h2">Lançamento</h2>
+            
+            <video controls preload="metadata" style="display: block; width: 60%; max-width: 520px; height: auto; margin: 20px auto;">
+                <source src="assets/videos/V%C3%ADdeo%20loja%20exclusiva.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
             <h2 class="titulo-h2">Recém-Adicionados</h2>
 
             <article>
                 <h3 class="titulo-h3">Shorts sal e pimenta Original</h3>
                 <img src="assets/images/vestuario-e-acessorios/shorts/shorts-sal-e-pimenta-cinza.jpeg" alt="Shorts sal e pimenta cinza" width="200">
                 <p class="texto-p">Preço: xx,xx</p>
-                <a href="pages/Shortscinza.html">Ver detalhes do produto</a>
+                <a class="botao-link" href="pages/Shortscinza.html">Ver detalhes do produto</a>
             </article>
 
             <br>
@@ -51,11 +72,11 @@
                 <h3 class="titulo-h3">Tênis Lançamento sal e Pimenta original</h3>
                 <img src="assets/images/vestuario-e-acessorios/calcados/tenis-azul.jpeg" alt="Tênis sal e pimenta azul" width="200">
                 <p class="texto-p">Preço: xx,xx</p>
-                <a href="pages/Tenisazul.html">Ver detalhes do produto</a>
+                <a class="botao-link" href="pages/Tenisazul.html">Ver detalhes do produto</a>
             </article>
 
             <br>
-            <a href="pages/lista-produtos.html"><b>Ver todo o catálogo →</b></a>
+            <a class="botao-link" href="pages/lista-produtos.html"><b>Ver todo o catálogo →</b></a>
         </section>
 
     </main>
@@ -71,5 +92,6 @@
         </nav>
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
