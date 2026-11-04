@@ -128,7 +128,61 @@ main {
     font-weight: 700;
 }
 
+/* ==========================================================
+   DETALHES (<details>)
+   ========================================================== */
+.detalhes {
+    margin: 1.5rem 0;
+}
+
+.detalhes-item {
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    padding: 0 1rem;
+    interpolate-size: allow-keywords;
+}
+
+.detalhes-item::details-content {
+    block-size: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 
+        block-size 0.35s ease,
+        opacity 0.35s ease,
+        content-visibility 0.35s allow-discrete;
+}
+
+.detalhes-item[open]::details-content {
+    block-size: auto;
+    opacity: 1;
+}
+
+.detalhes-item + .detalhes-item {
+    margin-top: 0.5rem;
+}
+
+.detalhes-titulo {
+    cursor: pointer;
+    padding: 0.75rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.detalhes-titulo:hover {
+    color: var(--cor-links);
+}
+
+/* Destaque quando aberto */
+.detalhes-item[open] > .detalhes-titulo {
+    border-bottom: 1px solid var(--cor-secundaria);
+    margin-bottom: 0.75rem;
+}
+
+
 /* Foco do teclado visível em todos os links do header e do footer */
+.detalhes-titulo:focus-visible,
 header a:focus-visible,
 footer a:focus-visible {
     outline: 2px solid var(--cor-secundaria);
