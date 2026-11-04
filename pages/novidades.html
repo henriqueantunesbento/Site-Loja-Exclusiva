@@ -4,46 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novidades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <!-- Parte superior da site -->
     <header>
-        <h1>Exclusiva</h1>
-        <h2>By Micaela Miranda</h2>
+        <nav class="navbar navbar-expand-lg menu-nav" aria-label="Menu principal">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/logo-png.png" width="800" height="383" alt="Exclusiva by Micaela Miranda">
+                </a>
 
-        <nav>
-            <a href="../index.html">Página Inicial</a> |
-            <a href="lista-produtos.html">Catálogo</a> |
-            <a href="novidades.html">Novidades</a> |
-            <a href="hospedagem-produto.html">Hospedagem de Produto</a> |
-            <a href="sobre-nos.html">Sobre Nós</a> |
-            <a href="avaliacao.html">Avaliação</a> |
-            <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
-            <a href="contato.html">Contato</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav menu-lista ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="lista-produtos.html" aria-current="page">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="novidades.html">Novidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hospedagem-produto.html">Hospedagem de Produto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="avaliacao.html">Avaliação</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" id="botaoTema" role="button">Tema claro</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- "introdução" da pagina em si -->
-        <h1>Novidades</h1>
-        <p>Bem-vindo à página de novidades!</p>
-        
-        <h2>Confira as últimas novidades da nossa loja:</h2>
+
+         <section>
+            <h2 class="titulo-h2">Novidades</h2>
+            <p class="texto-p">Confira os mais recentes produtos da nossa loja, todos feitos especialmente para você!</p>
+         </section>
+
+
+         <section>
         <!-- Roupas Novas -->
-        <article>            
-            <h3>NOVO! Lançou hoje em promoção!!</h3>
-            <img src="../assets/images/vestuario-e-acessorios/shorts/shorts-sal-e-pimenta-preto.jpeg" alt = "Shorts sal e pimenta preto" width="300">
-            <aside>
-                <p>Nossa Novidade mais recente! O Shorts Sal e Pimenta Preto perfeito para o Verão, para um look casual e confortável.
-                    Esse lançamento vem com 50% de desconto para a primeira compra, aproveite essa oportunidade e garanta o seu antes que acabe!
-                </p>
-            </aside>
-        </article>
+            <article>            
+                <h3 class="titulo-h3">NOVO! Lançou hoje em promoção!!</h3>
+                <a href="Shortspreto.html" aria-current="page">
+                    <img src="../assets/images/vestuario-e-acessorios/shorts/shorts-sal-e-pimenta-preto.jpeg" alt = "Shorts sal e pimenta preto" width="300">
+                </a>
+                <aside>
+                    <p class="texto-p">Nossa Novidade mais recente! O Shorts Sal e Pimenta Preto perfeito para o Verão, para um look casual e confortável.
+                        Esse lançamento vem com 50% de desconto para a primeira compra, aproveite essa oportunidade e garanta o seu antes que acabe!
+                    </p>
+                </aside>
+            </article>
+        </section>
         <article>
-            <h3>Lançamento anterior!</h3>
-            <img src="../assets/images/vestuario-e-acessorios/shorts/shorts-sal-e-pimenta-cinza.jpeg" alt = "Shorts sal e pimenta cinza" width="300">
+            <h3 class="titulo-h3">Lançamento anterior!</h3>
+            <a href="Shortscinza.html" aria-current="page">
+                <img src="../assets/images/vestuario-e-acessorios/shorts/shorts-sal-e-pimenta-cinza.jpeg" alt = "Shorts sal e pimenta cinza" width="300">
+            </a>
             <aside>
-                <p>Nova estação chegou! O Shorts Sal e Pimenta Cinza para o Verão, perfeito para um look estiloso.
+                <p class="texto-p">Nova estação chegou! O Shorts Sal e Pimenta Cinza para o Verão, perfeito para um look estiloso.
                     Esse produto tem 30% de desconto caso comprado em conjunto com outros itens, aproveite essa oportunidade e garanta o seu antes que acabe!
                 </p>
             </aside>
@@ -54,10 +77,16 @@
     <footer>
         <hr>
         <p>&copy; 2026 Loja Exclusiva - Todos os direitos reservados.</p>
-        <p>
-            <a href="politicas.html">Políticas de Privacidade</a> | 
-            <a href="contato.html">Atendimento</a>
-        </p>
+        
+        <nav aria-label="Links do rodapé">
+            <ul class="footer-lista">
+                <li><a href="politicas.html">Políticas de Privacidade</a></li>
+                <li><a href="contato.html">Atendimento</a></li>
+            </ul>
+        </nav>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/app.js"></script>
 </body>
 </html>
