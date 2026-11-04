@@ -99,9 +99,27 @@ No começo do desenvolvimento o grupo estava um tanto perdido sobre como iria se
 
 <img width="1280" height="720" alt="Validator-TenisPreto" src="https://github.com/user-attachments/assets/a10d8586-57b6-4960-9c5d-f229757e7ff0" />
 
+### **styles.css**
+
+<img width="1280" height="604" alt="validator_css" src="https://github.com/user-attachments/assets/df0c25ba-603e-4bf8-8bd1-67956456ba77" />
+
+
 ### **Produto Tenis Bege**
 
 <img width="1280" height="720" alt="Validator-TenisBege" src="https://github.com/user-attachments/assets/cb8fb4c9-3f4f-466f-add8-0342b2103309" />
 
-##aprendemos tamb   ém a organizar e separar o projeto em etapas para o desenvolvimento, e a comunicação com demais integrantes da equipe para solucionar problemas e
-alcançar melhores resultados.
+## **Uso de IA**
+
+Neste trabalho as IAs mais utilizadas foram claude e gemini, cada integrante teve a liberdade escolher qual modelo fosse mais adequado para o projeto, decisão tomada para que todos tivessem conforto com as ferramentas, essas tecnologias foram fundamentais para a conclusão do trabalho, por mais que cada participante da equipe tivesse estudado a respeito do desenvolvimento para web através das linguagens HTML, CSS e JavaScript, utilizar modelos de inteligência artificial auxilia na velocidade da produção do projeto, e também no aumento de qualidade do trabalho. Com o auxilio do gemini é possível solucionar problemas de código, tirar dúvidas e realizar pesquisas rápidas e eficiêntes em páginas web sobre design system, e com o auxilio do Claude é possível criar um projeto e adicionar o repositório ao Claude, além de instruções claras que tornem ainda melhor o auxilio da IA na compreenção do projeto e geração de códigos sem o surgimento de erros graves que comprometam o trabalho. 
+
+## **Se esse projeto fosse ser desenvolvido por IA**
+
+Utilizando a IA como auxiliadora do projeto já foi possível notar como melhorou nosso desenvolvimento, não há como negar que se o wwebsite fosse inteiramente desenvolvido com IA seria possível alcançar um resultado muito melhor, tendo já o conhecimento de como desenvolver um website, se torna ainda melhor utilizar a ferramenta pois, seriam realizados prompts melhores e mais eficiêntes, seria necessário refinar alguns prompts e revisar o que a IA gerou, mas em menos tempo já teria sido feito um website com alta qualidade e que atenderia mais do que as necessidades da loja.
+
+## **Dominio do site**
+
+O site não utiliza nenhum dominio em sua hospedagem, a pesquisa do dominio caso fosse adicionada seria em plataformas como GoDaddy ou Hostinger por serem plataformas seguras de venda de dominio, e a busca do dominio seria por nomes como "loja-exclusiva" ou simplesmente "exclusiva", pois são nomes que tem sentido com a loja e, seriam esses nomes que viriam na mente de quem conhece essa empresa caso fossem buscar por ela na internet.
+
+## **Conclusão:**
+
+No início, o grupo estava inseguro sobre como desenvolver o site, mas, à medida que nos organizamos, o projeto ganhou forma. Aprendemos a estruturar páginas em HTML, estilizá-las com CSS e adicionar interatividade com JavaScript, além de desenvolver a partir de requisitos reais de uma loja, e não de dados inventados. Também aprendemos a dividir o projeto em etapas e a nos comunicar bem para resolver problemas e chegar a resultados melhores.
