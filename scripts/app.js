@@ -3,6 +3,7 @@ function filtrarRoupas() {
     const filtro = document.getElementById("filtro").value;
     const secaoTenis = document.getElementById("secaoTenis");
     const secaoShorts = document.getElementById("secaoShorts");
+    const linhaDivisoria = document.getElementById("linhaDivisoria");
 
     if (filtro === "tenis") {
         secaoTenis.hidden = false;
@@ -14,8 +15,10 @@ function filtrarRoupas() {
         secaoTenis.hidden = false;
         secaoShorts.hidden = false;
     }
-}
 
+    // A linha dourada só aparece quando o filtro está em "Todos"
+    linhaDivisoria.style.display = filtro === "todos" ? "" : "none";
+}
 // ===== Tema claro / escuro =====
 function aplicarTema(tema) {
     document.documentElement.setAttribute("data-tema", tema);
