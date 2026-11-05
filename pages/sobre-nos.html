@@ -1,223 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós | Exclusiva</title>
-</head>
+    <title>Sobre Nós | Exclusiva by Micaela Miranda</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../styles/styles.css">
+
+</head>
 <body>
 
     <header>
-        <h1>Exclusiva</h1>
-        <h2>By Micaela Miranda</h2>
+        <nav class="navbar navbar-expand-lg menu-nav" aria-label="Menu principal">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/logo-png.png" width="150" alt="Exclusiva by Micaela Miranda">
+                </a>
 
-        <nav>
-            <a href="../index.html">Página Inicial</a> |
-            <a href="lista-produtos.html">Catálogo</a> |
-            <a href="novidades.html">Novidades</a> |
-            <a href="hospedagem-produto.html">Hospedagem de Produto</a> |
-            <a href="sobre-nos.html">Sobre Nós</a> |
-            <a href="avaliacao.html">Avaliação</a> |
-            <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
-            <a href="contato.html">Contato</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav menu-lista ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="lista-produtos.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="novidades.html">Novidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hospedagem-produto.html">Hospedagem de Produto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nos.html" aria-current="page">Sobre Nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="avaliacao.html">Avaliação</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" id="botaoTema" role="button">Tema claro</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+        <div class="container text-center my-4">
+            <h1 class="titulo-h1">Sobre nós</h1>
+        </div>
     </header>
 
-
-    <hr>
-
-    <main>
-
-        <section>
-            <h2>Bem-vinda à Exclusiva!👗</h2>
-
-            <p>
-                A Exclusiva nasceu para celebrar a beleza, a personalidade
-                e o estilo de cada mulher. Somos uma loja de roupas que
-                acredita que a moda vai muito além das tendências:
-                ela é uma forma de expressão.
-            </p>
-
-            <p>
-                Selecionamos cada peça pensando em você, buscando unir
-                estilo, qualidade, conforto e elegância em um só lugar.
-            </p>
-
-            <p>
-                Na Exclusiva, cada detalhe é pensado para que você encontre
-                peças que combinem com a sua personalidade e façam você
-                se sentir ainda mais confiante.
+    <main class="my-4">
+        <!-- Quem somos -->
+        <section class="mb-5" aria-labelledby="titulo-quem-somos">
+            <h2 class="titulo-h2" id="titulo-quem-somos">Quem somos 👗</h2>
+            <p class="texto-p">
+                A Exclusiva nasceu para celebrar a beleza, a personalidade e o estilo
+                de cada mulher. Selecionamos cada peça unindo qualidade, conforto e
+                elegância, para você se sentir ainda mais confiante.
             </p>
         </section>
 
-        <hr>
-      
-        <section>
-            <h2>Nossa Missão</h2>
-
-            <p>
-                Nossa missão é tornar a moda mais especial, acessível
-                e inspiradora.
-            </p>
-
-            <p>
-                Buscamos oferecer peças cuidadosamente selecionadas,
-                que unam qualidade, conforto e estilo, proporcionando
-                uma experiência única para nossas clientes.
-            </p>
-
-            <p>
-                Queremos que cada pessoa que escolha a Exclusiva encontre
-                muito mais do que uma roupa: encontre uma peça que
-                represente seu estilo e sua personalidade.
+        <!-- Missão -->
+        <section class="mb-5" aria-labelledby="titulo-missao">
+            <h2 class="titulo-h2" id="titulo-missao">Nossa missão</h2>
+            <p class="texto-p">
+                Tornar a moda mais especial, acessível e inspiradora, para que cada
+                cliente encontre muito mais do que uma roupa: uma peça que
+                represente o seu estilo.
             </p>
         </section>
 
-        <hr>
+        <!-- Valores -->
+        <section class="mb-5" aria-labelledby="titulo-valores">
+            <h2 class="titulo-h2" id="titulo-valores">Nossos valores</h2>
 
-        <section>
-            <h2>Nossos Valores</h2>
-
-    
-                <h3>Qualidade</h3>
-                <p>
-                    Valorizamos peças bem selecionadas, buscando oferecer
-                    qualidade e conforto em cada escolha.
-                </p>
-
-
-            
-                <h3>Estilo</h3>
-                <p>
-                    Acreditamos que cada pessoa possui um estilo único
-                    e merece encontrar roupas que expressem sua personalidade.
-                </p>
-            
-
-            
-                <h3>Exclusividade</h3>
-                <p>
-                    Nossa seleção é pensada para trazer peças especiais
-                    e cheias de personalidade.
-                </p>
-            
-
-        
-                <h3>Confiança</h3>
-                <p>
-                    Construímos nossa relação com as clientes através
-                    de respeito, transparência e dedicação.
-                </p>
-            
-
-            
-                <h3>Paixão pela moda</h3>
-                <p>
-                    A moda está no coração da Exclusiva. Estamos sempre
-                    buscando novidades e inspirações para você.
-                </p>
-            
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="border p-3 h-100 text-center">
+                        <h3 class="titulo-h3">Qualidade</h3>
+                        <p class="texto-p">Peças bem selecionadas e confortáveis.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="border p-3 h-100 text-center">
+                        <h3 class="titulo-h3">Estilo</h3>
+                        <p class="texto-p">Roupas que expressam sua personalidade.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="border p-3 h-100 text-center">
+                        <h3 class="titulo-h3">Exclusividade</h3>
+                        <p class="texto-p">Seleção especial, cheia de personalidade.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="border p-3 h-100 text-center">
+                        <h3 class="titulo-h3">Confiança</h3>
+                        <p class="texto-p">Respeito, transparência e dedicação.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr>
-        <section>
-            <h2>Por que escolher a Exclusiva? 🛍️</h2>
-
-            <p>
-                Na Exclusiva, queremos que sua experiência seja tão especial
-                quanto as peças que você encontra em nossa loja.
-            </p>
-
-            <ul>
-                <li>
-                    <b>Peças selecionadas</b>
-                    Escolhemos nossas roupas pensando em estilo e qualidade.
-                </li>
-
-                <li>
-                    <b>Variedade de estilos</b>
-                    Encontre opções para diferentes momentos e ocasiões.
-                </li>
-
-                <li>
-                    <b>Experiência especial</b>
-                    Cada cliente é importante para nós.
-                </li>
-
-                <li>
-                    <b>Novidades</b>
-                    Estamos sempre em busca de novas tendências e inspirações.
-                </li>
-
-                <li>
-                    <b>Estilo e personalidade</b>
-                    Porque acreditamos que sua roupa deve representar quem você é.
-                </li>
-            </ul>
+        <!-- Chamada final -->
+        <section class="text-center" aria-labelledby="titulo-cta">
+            <h2 class="titulo-h2" id="titulo-cta">Faça parte da Exclusiva 👑</h2>
+            <p class="texto-p"><strong>Seu estilo. Sua personalidade. Sua Exclusiva.</strong></p>
+            <a href="lista-produtos.html" class="btn btn-warning">Conheça nossa coleção</a>
         </section>
-        
-        <hr>
-
-       
-        <section>
-            <h2>Nosso Compromisso </h2>
-
-            <p>
-                Nosso compromisso é oferecer uma experiência de compra
-                especial, desde o primeiro contato até a escolha da sua peça.
-            </p>
-
-            <p>
-                Estamos sempre buscando melhorar, trazer novidades
-                e entender o que nossas clientes procuram.
-            </p>
-
-            <p>
-                Mais do que vender roupas, queremos fazer parte de momentos
-                em que você se sente bonita, confiante e feliz com aquilo
-                que veste.
-            </p>
-        </section>
-
-        <hr>
-
-     
-        <section>
-            <h2>Faça parte da Exclusiva. 👑</h2>
-
-            <p>
-                Descubra novas possibilidades para o seu estilo e encontre
-                peças que combinam com você.
-            </p>
-
-            <p>
-                <b>
-                    Seu estilo. Sua personalidade. Sua Exclusiva.
-                </b>
-            </p>
-
-            <p>
-                <a href="lista-produtos.html">CONHEÇA NOSSA COLEÇÃO</a>
-            </p>
-        </section>
-
     </main>
 
-    <hr>
-
-
     <footer>
-        <hr>
         <p>&copy; 2026 Loja Exclusiva - Todos os direitos reservados.</p>
-        <p>
-            <a href="politicas.html">Políticas de Privacidade</a> | 
-            <a href="contato.html">Atendimento</a>
-        </p>
-    </footer>
-
-</body>
-
-</html>
-
+        <ul class="footer-lista">
+            <li><a href="politicas.html">Políticas de Privacidade</a></li>
