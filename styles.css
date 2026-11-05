@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* ==========================================================
+   VARIÁVEIS
+   ========================================================== */
+:root {
+    --cor-principal: #0b0b0b;
+    --cor-secundaria: #c9a227;
+    --cor-links: #ffffff;
+    --cor-texto: #f5f5f5;
+    --cor-pagina-atual: #c9a227; /* cor do link da página em que o usuário está */
+    --largura-max: 75rem;        /* largura do conteúdo: menu, página e footer usam a mesma */
+}
+
+
+/* Tema claro: redefine as variáveis existentes */
+:root[data-tema="claro"] {
+    --cor-principal: #f5f5f5;
+    --cor-secundaria: #826800;
+    --cor-links: #0b0b0b;
+    --cor-texto: #0b0b0b;
+    --cor-pagina-atual: #826800;
+}
+
+/* ==========================================================
+   ESTRUTURA GERAL (vale para todas as páginas, sem precisar de classe)
+   ========================================================== */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;              /* coluna: header, main, footer */
+    flex-direction: column;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Mesma largura e mesmo alinhamento: as linhas do menu e do footer ficam alinhadas */
+header,
+main,
+footer {
+    width: calc(100% - 2rem);
+    max-width: var(--largura-max);
+    margin: 0 auto;
+}
+
+/* O main ocupa o espaço que sobrar e empurra o footer para o fim da tela */
+main {
+    flex: 1;
+}
+
+/* ==========================================================
+   TÍTULOS E TEXTOS
+   ========================================================== */
+.titulo-h1 {
+    color: var(--cor-secundaria);
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-h2 {
+    color: var(--cor-secundaria);
+    font-size: 1.75rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-h3 {
+    font-size: 1.25rem;
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texto-p {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--cor-texto);
+}
+
+.botao-link {
+    color: var(--cor-links);
+}
+
+.botao-link:hover {
+    color: var(--cor-secundaria);
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ==========================================================
+   MENU DE NAVEGAÇÃO (header)
+   ========================================================== */
+.menu-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+    padding: 0.5rem 0 0.75rem;
+    border-bottom: 2px solid var(--cor-secundaria);
+}
+
+.menu-nav img {
+    display: block;
+    width: 12rem;
+    height: auto;
+}
+
+/* Listas do menu e do footer: sem bolinhas, em linha e centralizadas */
+.menu-lista,
+.footer-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Separador entre os itens (feito no CSS, não no HTML) */
+.menu-lista li + li,
+.footer-lista li + li {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--cor-secundaria);
+}
+
+.menu-lista a,
+.footer-lista a {
+    display: inline-block;
+    padding: 0.5rem 0;          /* aumenta a área de clique */
+    color: var(--cor-links);
+}
+
+.menu-lista a:hover,
+.footer-lista a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Link da página atual (o HTML marca com aria-current="page") */
+.menu-lista a[aria-current="page"] {
+    color: var(--cor-pagina-atual);
+    font-weight: 700;
+}
+
+/* ==========================================================
+   DETALHES (<details>)
+   ========================================================== */
+.detalhes {
+    margin: 1.5rem 0;
+}
+
+.detalhes-item {
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    padding: 0 1rem;
+    interpolate-size: allow-keywords;
+}
+
+.detalhes-item::details-content {
+    block-size: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 
+        block-size 0.35s ease,
+        opacity 0.35s ease,
+        content-visibility 0.35s allow-discrete;
+}
+
+.detalhes-item[open]::details-content {
+    block-size: auto;
+    opacity: 1;
+}
+
+.detalhes-item + .detalhes-item {
+    margin-top: 0.5rem;
+}
+
+.detalhes-titulo {
+    cursor: pointer;
+    padding: 0.75rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.detalhes-titulo:hover {
+    color: var(--cor-links);
+}
+
+/* Destaque quando aberto */
+.detalhes-item[open] > .detalhes-titulo {
+    border-bottom: 1px solid var(--cor-secundaria);
+    margin-bottom: 0.75rem;
+}
+
+
+/* Foco do teclado visível em todos os links do header e do footer */
+.detalhes-titulo:focus-visible,
+header a:focus-visible,
+footer a:focus-visible {
+    outline: 2px solid var(--cor-secundaria);
+    outline-offset: 2px;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1rem 0 1.5rem;
+    border-top: 1px solid var(--cor-secundaria);   
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 0.5rem;
+    color: var(--cor-texto);
+    font-size: 1rem;
+}
+
+.botao-form {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-form:hover {
+    background-color: var(--cor-texto);
+    color: var(--cor-principal);
+    transform: scale(1.05);
+}
