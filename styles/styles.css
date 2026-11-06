@@ -138,9 +138,10 @@ main {
 }
 
 .menu-lista a:hover,
-.footer-lista a:hover {
+.footer-lista a[aria-current="page"] {
     color: var(--cor-secundaria);
 }
+
 
 /* Link da página atual (o HTML marca com aria-current="page") */
 .menu-lista a[aria-current="page"] {
