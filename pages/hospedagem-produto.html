@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial - Loja Exclusiva</title>
+    <title>Hospedagem de Produto - Loja Exclusiva</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -35,7 +35,7 @@
                         <li class="nav-item"><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
                         <li class="nav-item"><a class="nav-link" href="avaliacao.html">Avaliação</a></li>
                         <li class="nav-item"><a class="nav-link" href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contato.html" aria-current="page">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                         <li class="nav-item"><a class="nav-link" href="#" id="botaoTema" role="button">Tema claro</a></li>
                     </ul>
                 </div>
@@ -47,7 +47,7 @@
         <!-- Seção de Apresentação -->
         <section>
             <h1 class="titulo-h1">Hospede e Venda Suas Peças</h1>
-            <p>Quer dar uma nova vida às peças do seu guarda-roupa? Cadastre suas roupas seminovas ou nunca usadas para serem anunciadas na <b>Loja Exclusiva</b>.</p>
+            <p class="texto-p">Quer dar uma nova vida às peças do seu guarda-roupa? Cadastre suas roupas seminovas ou nunca usadas para serem anunciadas na <b>Loja Exclusiva</b>.</p>
             
             <h3 class="titulo-h3">Como Funciona?</h3>
             <ol>
@@ -65,20 +65,20 @@
             <summary class="botao-form">anuncie sua peça</summary>
             <h2 class="titulo-h2">Formulário de Anúncio de Peça</h2>
     
-            <form action="#" method="post"
+            <form action="#" method="post">
                 
                 <!-- Dados da Vendedora -->
                 <fieldset>
                     <legend><b>1. Dados da Vendedora</b></legend>
-                    <p>
+                    <p class="texto-p">
                         <label for="nome-vendedora">Nome Completo:</label><br>
                         <input type="text" id="nome-vendedora" name="nome_vendedora" required placeholder="Digite seu nome">
                     </p>
-                    <p>
+                    <p class="texto-p">
                         <label for="email-vendedora">E-mail de Contato:</label><br>
                         <input type="email" id="email-vendedora" name="email_vendedora" required placeholder="seuemail@exemplo.com">
                     </p>
-                    <p>
+                    <p class="texto-p">
                         <label for="telefone-vendedora">Telefone / WhatsApp:</label><br>
                         <input type="tel" id="telefone-vendedora" name="telefone_vendedora" required placeholder="(11) 99999-9999">
                     </p>
@@ -90,12 +90,12 @@
                 <fieldset>
                     <legend><b>2. Detalhes da Roupa</b></legend>
                     
-                    <p>
+                    <p class="texto-p">
                         <label for="titulo-produto">Título do Anúncio:</label><br>
                         <input type="text" id="titulo-produto" name="titulo_produto" required placeholder="Ex: Vestido Floral de Verão">
                     </p>
     
-                    <p>
+                    <p class="texto-p">
                         <label for="categoria">Categoria:</label><br>
                         <select id="categoria" name="categoria" required>
                             <option value="">-- Selecione uma categoria --</option>
@@ -109,7 +109,7 @@
                         </select>
                     </p>
     
-                    <p>
+                    <p class="texto-p">
                         <label for="tamanho">Tamanho da Peça:</label><br>
                         <select id="tamanho" name="tamanho" required>
                             <option value="">-- Selecione o tamanho --</option>
@@ -122,7 +122,7 @@
                         </select>
                     </p>
     
-                    <p>
+                    <p class="texto-p">
                         <label for="estado-peca">Estado de Conservação:</label><br>
                         <select id="estado-peca" name="estado_peca" required>
                             <option value="">-- Selecione o estado --</option>
@@ -132,12 +132,12 @@
                         </select>
                     </p>
     
-                    <p>
+                    <p class="texto-p">
                         <label for="preco">Preço Desejado (R$):</label><br>
                         <input type="number" id="preco" name="preco" step="0.01" min="0" placeholder="00,00" required>
                     </p>
     
-                    <p>
+                    <p class="texto-p">
                         <label for="descricao">Descrição Detalhada da Peça:</label><br>
                         <textarea id="descricao" name="descricao" rows="5" cols="40" placeholder="Informe marca, tecido, detalhes especiais, avarias (se houver), etc."></textarea>
                     </p>
@@ -149,12 +149,12 @@
                 <fieldset>
                     <legend><b>3. Imagens e Aceite</b></legend>
     
-                    <p>
+                    <p class="texto-p">
                         <label for="fotos">Fotos da Peça (Envie imagens claras da frente, costas e etiqueta):</label><br>
                         <input type="file" id="fotos" name="fotos" multiple accept="image/*" required>
                     </p>
     
-                    <p>
+                    <p class="texto-p">
                         <input type="checkbox" id="termos" name="termos" required>
                         <label for="termos">Declaro que as informações prestadas são verdadeiras e que concordo com as <a href="politicas.html">Políticas de Hospedagem e Venda</a> do site.</label>
                     </p>
@@ -162,7 +162,7 @@
     
                 <br>
     
-                <p>
+                <p class="texto-p">
                     <button type="submit">Enviar Peça para Análise</button>
                     <button type="reset">Limpar Formulário</button>
                 </p>
@@ -174,7 +174,7 @@
 
     <!-- Rodapé da página -->
     <footer>
-        <p>&copy; 2026 Loja Exclusiva - Todos os direitos reservados.</p>
+        <p class="texto-p">&copy; 2026 Loja Exclusiva - Todos os direitos reservados.</p>
         
         <nav aria-label="Links do rodapé">
             <ul class="footer-lista">
