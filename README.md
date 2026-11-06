@@ -16,7 +16,7 @@ Endereço: Rua Bispo e Martins, nº 3 - Jd. Keralux
 
 ## **Link do site**
 
-https://henriqueantunesbento.github.io/Site-Loja-Exclusiva/
+[https://henriqueantunesbento.github.io/Site-Loja-Exclusiva/](https://henriqueantunesbento.github.io/Site-Loja-Exclusiva/index.html)
 
 ## **Introdução:** 
 
