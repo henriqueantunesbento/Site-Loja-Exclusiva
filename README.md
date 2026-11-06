@@ -2,8 +2,7 @@
 
 Henrique Antunes Bento  
 Gustavo de Souza Barbosa  
-Vinicius Ramiro dos Santos Cunha  
-Paulo Alexandre Ferreira Martins  
+Vinicius Ramiro dos Santos Cunha    
 Sofia de Oliveira Tavares 
 
 ## **Contato da loja**
