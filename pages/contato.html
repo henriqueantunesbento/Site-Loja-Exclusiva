@@ -3,51 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Trabalhe Conosco</title>
+    <title>Página de Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <header>
-        <h1>Exclusiva</h1>
-        <h2>By Micaela Miranda</h2>
 
-        <nav>
-            <a href="../index.html">Página Inicial</a> |
-            <a href="lista-produtos.html">Catálogo</a> |
-            <a href="novidades.html">Novidades</a> |
-            <a href="hospedagem-produto.html">Hospedagem de Produto</a> |
-            <a href="sobre-nos.html">Sobre Nós</a> |
-            <a href="avaliacao.html">Avaliação</a> |
-            <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
-            <a href="contato.html">Contato</a>
-        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                aria-expanded="false" aria-label="Abrir menu de navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+<nav class="navbar navbar-expand-lg menu-nav" aria-label="Menu principal">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html" aria-current="page">
+            <img src="../assets/images/logo-png.png" width="800" height="383" alt="Exclusiva by Micaela Miranda">
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                aria-expanded="false" aria-label="Abrir menu de navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav menu-lista ms-auto">
+                <li class="nav-item"><a class="nav-link" href="lista-produtos.html">Catálogo</a></li>
+                <li class="nav-item"><a class="nav-link" href="novidades.html">Novidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="hospedagem-produto.html">Hospedagem de Produto</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link" href="avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a class="nav-link" href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html" aria-current="page">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="botaoTema" role="button">Tema claro</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
     </header>
 
     <main>
-        <h1>Página de Trabalhe Conosco</h1>
+        <h1 class="titulo-h1">Página de Contato</h1>
 
+        
+        
+        <p><i class="fa-brands fa-instagram"></i> <a class="botao-link" href="https://instagram.com/exclusivaa_lojja">@exclusivaa_lojja</a></p>
+        
+
+        
+        <p><i class="fa-brands fa-whatsapp"></i> <a class="botao-link" href="https://wa.me/5511958350265">(11) 95835-0265</a></p>
+        
+    
         <p>
-            Faça parte do time Exclusiva!<br>
-            Na Exclusiva, não vendemos apenas roupas entregamos estilo, 
-            autoestima e experiências únicas para nossos clientes. Somos uma marca em constante evolução, movida por paixão por moda, inovação e um atendimento verdadeiramente exclusivo.<br>
-            Buscamos pessoas criativas, dinâmicas e apaixonadas pelo universo da moda para crescerem junto com a gente. Se você ama desafios, gosta de trabalhar em um ambiente colaborativo e quer fazer a diferença, o seu lugar é aqui!
+            <b>Endereço:</b> 
+            Rua Bispo e Martins, nº 3 - Jd. Keralux
         </p>
 
-        <hr>
-
-        <h2>Informações da Vaga</h2>
-        <ul>
-            <li>Diária: R$ 150,00</li>
-            <li>Horário de trabalho:Das 07:30 às 17:30</li>
-            <li>Benefícios:Vale Transporte e Vale Refeição.</li>
-        </ul>
-
-        <hr>
-
-        <h2>Candidatura</h2>
         <details>
-        <summary class="botao-form">Formulário de Candidatura</summary>
+            <summary class="botao-form">Suporte</summary>
+        
 
         <form action="#" method="post">
             <p>
@@ -66,24 +88,31 @@
             </p>
 
             <p>
-                <label for="experiencia">Experiências Profissionais Anteriores:</label><br>
-                <textarea id="experiencia" name="experiencia" rows="6" cols="50" placeholder="Descreva suas experiências de trabalho anteriores..." required></textarea>
+                <label for="problema">Qual é o problema?:</label><br>
+                <textarea id="problema" name="problema" rows="6" cols="50" placeholder="Descreva qual é o problema que você está enfrentando..." required></textarea>
             </p>
 
             <p>
-                <button type="submit">Enviar Candidatura</button>
+                <button type="submit">Enviar</button>
             </p>
         </form>
+
+
+
     </main>
 
+  
     <footer>
-        <hr>
         <p>&copy; 2026 Loja Exclusiva - Todos os direitos reservados.</p>
-        <p>
-            <a href="politicas.html">Políticas de Privacidade</a> | 
-            <a href="contato.html">Atendimento</a>
-        </p>
+
+        <nav aria-label="Links do rodapé">
+            <ul class="footer-lista">
+                <li><a href="politicas.html">Políticas de Privacidade</a></li>
+            </ul>
+        </nav>
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/app.js"></script>
 </body>
 </html>
